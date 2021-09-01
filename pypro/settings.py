@@ -30,6 +30,8 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['*']
 
+#AUTH_USER_MODEL = 'base.User'
+
 # Application definition
 
 STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
@@ -43,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'pypro.base.apps'
+    'base.apps'
 ]
 
 MIDDLEWARE = [
