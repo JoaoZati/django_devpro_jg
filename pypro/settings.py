@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'base.apps'
+    'base'
 ]
 
 MIDDLEWARE = [
