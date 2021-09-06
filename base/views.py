@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.http import HttpResponse # noqa
 from django.shortcuts import render # noqa
 
 
 def home(request):
-    return HttpResponse('<html><body>Ola Django</body></html>', content_type='text/html')
+    return render(request, 'base/home.html')
