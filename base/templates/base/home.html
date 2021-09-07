@@ -11,7 +11,7 @@
 
     <meta name="description" content="Página do curso Python Pro João Guilherme">
     <meta name="author" content="João Guilherme">
-
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
     <link href= "{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
     <link href= "{% static 'css/style.css' %}" rel="stylesheet">
     <script src="{% static 'js/jquery.min.js' %}"></script>
@@ -22,7 +22,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'home' %}">Python Pro JG</a>
+  <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro JG</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -32,9 +32,7 @@
     </ul>
   </div>
 </nav>
-
-
-<div class="container-fluid">
+<div class="container">
     <div class="row">
         <div class="col-md-12">
 
@@ -89,30 +87,27 @@
             </nav>
             <div class="jumbotron">
                 <h2>
-                    Hello, world!
+                    Curso Python com Luciano Ramalho
                 </h2>
                 <p>
-                    This is a template for a simple marketing or informational website. It includes a large callout
-                    called the hero unit and three supporting pieces of content. Use it as a starting point to create
-                    something more unique.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-large" href="#">Learn more</a>
+                    Confira em breve mais informações sobre o curso que será ministrado pelo autor do livro:
+                    <a href="https://www.oreilly.com/playlists/ba5190c2-d78d-484a-9875-812214b589dd/" target="_blank" >Python Fluente</a>
                 </p>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="card">
                         <h5 class="card-header">
-                            Card title
+                            Mais detalhes sobre o desenvolvedor
                         </h5>
                         <div class="card-body">
                             <p class="card-text">
-                                Card content
+                                <img src="{% static 'img/me.jpg' %}" alt="Foto de João Guilherme" class="rounded mx-auto d-block">
+                                Este é um projeto desenvolvido no curso Python Pro <a href="https://pythonpro.com" >Python Pro</a> com o
+                                objetivo de criar uma aplicação de gerenciamento de cursos do autor Luciano Ramalho. O desenvolvedor desse projeto
+                                se chama João Guilherme e seus projetos podem ser visto no seu portifólio no <a href="https://github.com/JoaoZati">GitHub</a>
+                                O projeto desse site pode ser visto em <a href="https://github.com/JoaoZati/django_devpro_jg">django_devpro_jg</a>.
                             </p>
-                        </div>
-                        <div class="card-footer">
-                            Card footer
                         </div>
                     </div>
                 </div>
@@ -120,5 +115,29 @@
         </div>
     </div>
 </div>
+<footer class="main-footer mt-5 pt-4 text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Entre em Contato:</h3>
+                <address>
+                    <br/>
+                    <a href="mailto:joaozati@gmail.com" class="text-light">joaozati@gmail.com</a>
+                </address>
+            </div>
 
+        </div>
+    </div>
+    <div class="rights pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    {% now 'd' %} de {% now 'M' %} de {% now 'Y' %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
 </body>
