@@ -1,37 +1,9 @@
+{% extends 'base/base.html' %}
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+{% block title %}Python Pro João Guilherme-Home{% endblock title %}
 
-    <title>Python Pro João Guilherme</title>
-
-    <meta name="description" content="Página do curso Python Pro João Guilherme">
-    <meta name="author" content="João Guilherme">
-    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}" />
-    <link href= "{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <link href= "{% static 'css/style.css' %}" rel="stylesheet">
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/scripts.js' %}"></script>
-
-
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="{% url 'base:home' %}">Python Pro JG</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    </ul>
-  </div>
-</nav>
+{% block body %}
 <div class="container mt-2">
     <div class="row">
         <div class="col-md-12">
@@ -59,84 +31,13 @@
                         <center><input type="text" value="" name="FNAME" class="required email" id="mce-FNAME" placeholder="Nome"></center>
                     </div>
                     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_35d1de4f6415d33aa445a48a4_271ce6a76f" tabindex="-1" value=""></div>
-                    <div class="col-auto">
+                    <div class="col-auto mt-2">
                         <center><button type="submit" class="btn btn-primary mb-2">Submit</button></center>
                     </div>
                   </div>
                 </form>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <h5 class="card-header">
-                            <center>Mais detalhes sobre o instrutor</center>
-                        </h5>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <img src="{% static 'img/luciano.jpg' %}" alt="Foto de Luciano Ramalho" class="rounded mx-auto d-block">
-                                Ramalho é sócio e professor na <a href="https://www.python.pro.br">Python Pro</a> e autor do Livro Python Fluente.
-                                Foi diretor técnico do Brasil Online, primeiro portal da Abril S/A na Web. Liderou times para os portais IDG Now,
-                                BOL, UOL, AOL Brasil e outros, usando Python desde 1998. Como instrutor, atendeu clientes como Citibank, CPqD, Serpro,
-                                Presidência da República, Globo.com e Itaú. Palestrante em eventos internacionais como FISL, PyCon US e OSCON. Ajudou
-                                a criar a Associação Python Brasil e foi seu presidente. É membro da Python Software Foundation e fundador do Garoa Hacker
-                                Clube, o primeiro hackerspace do Brasil.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card">
-                        <h5 class="card-header">
-                            <center>Mais detalhes sobre o desenvolvedor</center>
-                        </h5>
-                        <div class="card-body">
-                            <p class="card-text">
-                                <img src="{% static 'img/me.jpg' %}" alt="Foto de João Guilherme" class="rounded mx-auto d-block">
-                                Este é um projeto desenvolvido no curso <a href="https://pythonpro.com" >Python Pro</a> com o
-                                objetivo de criar uma aplicação de gerenciamento de cursos do autor Luciano Ramalho. O desenvolvedor desse projeto
-                                se chama João Guilherme e seus projetos podem ser visto no seu portifólio no <a href="https://github.com/JoaoZati">GitHub</a>
-                                O projeto desse site pode ser visto em <a href="https://github.com/JoaoZati/django_devpro_jg">django_devpro_jg</a>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="main-footer mt-5 pt-4 text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <center><h3>Entre em Contato:</h3></center>
-                <address>
-                    <center><a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a></center>
-                </address>
-                <address>
-                    <center><a href="mailto:joaozati@gmail.com" class="text-light">joaozati@gmail.com</a></center>
-                </address>
-            </div>
-
-        </div>
-    </div>
-    <div class="rights pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <center>{% now 'd' %} de {% now 'M' %} de {% now 'Y' %}</center>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</footer>
-</body>
+{% endblock body %}
