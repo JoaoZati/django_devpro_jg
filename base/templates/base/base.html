@@ -32,7 +32,9 @@
     </ul>
   </div>
 </nav>
+
 {% block body %}{% endblock body %}
+
 <div class="container mt-2">
     <div class="row">
         <div class="col-md-12">
@@ -83,31 +85,7 @@
         </div>
     </div>
 </div>
-<footer class="main-footer mt-5 pt-4 text-light">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <center><h3>Entre em Contato:</h3></center>
-                <address>
-                    <center><a href="mailto:ramalho@python.pro.br" class="text-light">ramalho@python.pro.br</a></center>
-                </address>
-                <address>
-                    <center><a href="mailto:joaozati@gmail.com" class="text-light">joaozati@gmail.com</a></center>
-                </address>
-            </div>
 
-        </div>
-    </div>
-    <div class="rights pb-4">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <center>{% now 'd' %} de {% now 'M' %} de {% now 'Y' %}</center>
-                </div>
+{% include 'base/footer.html' with email_ramalho='ramalho@python.pro.br' only %}
 
-            </div>
-        </div>
-    </div>
-
-</footer>
 </body>
