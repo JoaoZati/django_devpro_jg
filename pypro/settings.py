@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'base',
     'aperitivos',
     'modulos',
+    'ordered_model'
 ]
 
 MIDDLEWARE = [
