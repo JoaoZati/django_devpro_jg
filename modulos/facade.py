@@ -10,4 +10,4 @@ def listar_metodos_ordenados() -> List[Modulo]:
     :return:
     """
 
-    return list(Modulo.objects.order_by('titulo').all())
+    return list(Modulo.objects.order_by('order').all())
