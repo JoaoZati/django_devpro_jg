@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}Python Pro João Guilherme-Motivação{% endblock title %}
+
+{% block body %}
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-12">
+            <center><h1 class="mt-4 mb-3">{{ aula.titulo | default:"Faltando Titulo" }}</h1></center>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/{{ aula.vimeo_id }}?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=4886bdea4c" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AULA 01 - MOTIVA&amp;Ccedil;&amp;Atilde;O &amp;mdash; Curso de Python Gr&amp;aacute;tis-2aYplgJrPDU"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+    </div>
+</div>
+{% endblock body %}
