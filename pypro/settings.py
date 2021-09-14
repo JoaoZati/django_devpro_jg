@@ -51,7 +51,8 @@ INSTALLED_APPS = [
     'base',
     'aperitivos',
     'modulos',
-    'ordered_model'
+    'ordered_model',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
