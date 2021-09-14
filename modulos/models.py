@@ -8,6 +8,7 @@ class Modulo(OrderedModel):
     publico = models.TextField(null=True)
     descricao = models.TextField(null=True)
     slug = models.SlugField(unique=True)
+    # aula_set # automático
 
     class Meta(OrderedModel.Meta):
         pass
