@@ -47,10 +47,8 @@
                 aria-haspopup="true" aria-expanded="false">
                   {{ user.first_name }}
               </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <button type="button" class="dropdown-item" >Sair</button>
-                </div>
             </li>
+            <a class="btn btn-light" href="{% url 'logout' %}" >Sair</a>
     </ul>
   {% else %}
   <a class="btn btn-light" href="{% url 'login' %}">Login</a>
