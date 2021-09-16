@@ -45,6 +45,10 @@ LOGOUT_REDIRECT_URL = '/'
 COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
 
 INSTALLED_APPS = [
+    'base',
+    'aperitivos',
+    'modulos',
+    'turmas',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,12 +56,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'collectfast',
     'django.contrib.staticfiles',
-    'base',
-    'aperitivos',
-    'modulos',
     'ordered_model',
     'django_extensions',
-    'turmas',
 ]
 
 MIDDLEWARE = [
