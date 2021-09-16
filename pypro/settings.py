@@ -35,6 +35,10 @@ ALLOWED_HOSTS = ['*']
 
 AUTH_USER_MODEL = 'base.User'
 
+LOGIN_URL = '/contas/login/'
+LOGIN_REDIRECT_URL = '/modulos/'
+LOGOUT_REDIRECT_URL = '/'
+
 # Application definition
 
 # STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
